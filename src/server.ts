@@ -1,33 +1,7 @@
-import express from "express";
-import initDB from "./config/db";
+import app from "./app";
 import config from "./config";
-import { authRouter } from "./modules/auth/auth.routes";
-import { userRouters } from "./modules/user/user.routes";
-import { vehicleRouter } from "./modules/vehicles/vehicle.routes";
-import { bookingRouter } from "./modules/booking/booking.routes";
-
-const app = express();
-const port = config.port;
-
-//? parser
-app.use(express.json());
-
-//? DB
-initDB();
-
-//? auth route
-app.use("/api/v1/auth", authRouter);
-
-//? user route
-app.use("/api/v1/users", userRouters);
-
-//? vehicle route
-app.use("/api/v1/vehicles", vehicleRouter);
-
-//? booking route
-app.use("/api/v1/bookings", bookingRouter);
 
 //? listen server
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(config.port, () => {
+  console.log(`Example app listening on port ${config.port}`);
 });
