@@ -41,7 +41,12 @@ The API is designed to be consumed by a frontend application and follows clean c
 ### Step 1: Clone the Repository (in bash or terminal)
 ### Step 2: npm install (in bash or terminal)
 ### Step 3: Add .env file and docs, 
-PORT = Your port
-CONNECTION_STRING = Your postgresql connection string
-AUTH_SECRET = Your jwt secret
+- PORT = Your port
+- CONNECTION_STRING = Your postgresql connection string
+- AUTH_SECRET = Your jwt secret
 ### Step 4: npm run dev
+
+
+## Credential
+- Admin email: ridwanul161@gmail.com
+- Admin pass: postman123
