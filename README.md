@@ -1,7 +1,7 @@
 # Express Server
 
 ## Live URL
-**Base API URL:** https://your-live-api-url.com
+**Base API URL:** https://express-server-seven-gray.vercel.app
 
 ---
 
